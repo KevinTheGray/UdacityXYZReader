@@ -16,8 +16,8 @@
       android:layout_height="match_parent"
       app:layout_scrollFlags="scroll|exitUntilCollapsed"
       app:contentScrim="?attr/colorPrimary"
-      app:expandedTitleMarginStart="48dp"
-      app:expandedTitleMarginEnd="64dp">
+      app:expandedTitleMarginStart="@dimen/activity_list_title_margin_start"
+      app:expandedTitleMarginEnd="@dimen/activity_list_title_margin_end">
 
       <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -30,7 +30,7 @@
       </android.support.v7.widget.Toolbar>
       <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="116dp">
+        android:layout_height="@dimen/activity_list_toolbar_height">
 
         <ImageView
           android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:clipToPadding="false"
-      android:paddingBottom="28dp"
+      android:paddingBottom="@dimen/activity_list_recycler_view_bottom_padding"
       android:paddingLeft="@dimen/list_side_margin"
       android:paddingRight="@dimen/list_side_margin"
       android:paddingTop="@dimen/list_top_margin"
